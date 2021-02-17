@@ -1,0 +1,29 @@
+.navbar {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar__links {
+    display: none;
+    list-style: none;
+
+    a {  
+      text-decoration: none;
+    }
+  }
+}
+
+#home_navbar {
+  .navbar__links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      margin: 0 15px;
+    }
+  }
+}

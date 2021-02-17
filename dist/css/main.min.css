@@ -1,1 +1,1 @@
-*{margin:0;padding:0}img{width:100%}
+.navbar{width:100%;height:20px;display:flex;justify-content:space-between;align-items:center}.navbar .navbar__links{display:none;list-style:none}.navbar .navbar__links a{text-decoration:none}#home_navbar .navbar__links{width:100%;display:flex;justify-content:flex-end;align-items:center}#home_navbar .navbar__links li{margin:0 15px}.logo{width:60px}*{margin:0;padding:0}img{width:100%}
