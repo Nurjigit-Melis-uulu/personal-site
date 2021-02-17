@@ -11,6 +11,16 @@
 
     a {  
       text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .active {
+      color: #BD00FF;
     }
   }
 }
