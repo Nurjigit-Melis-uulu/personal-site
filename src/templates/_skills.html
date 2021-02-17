@@ -1,0 +1,38 @@
+<section class="section" id="skills">
+  @@include("./navigation/_home_navbar.html")
+
+  <div class="content">
+    <article>
+      @@include("./UI/_title.html", { title: "my skills"})
+
+      <div class="skills_list">
+        <div class="skill">
+          <img src="../images/icons/html-logo.png" alt="html">
+          <span>html</span>
+        </div>
+        <div class="skill">
+          <img src="../images/icons/css-logo.png" alt="css">
+          <span>css</span>
+        </div>
+        <div class="skill">
+          <img src="../images/icons/js-logo.png" alt="js">
+          <span>js</span>
+        </div>
+        <div class="skill">
+          <img src="../images/icons/gulp-logo.png" alt="gulp">
+          <span>gulp</span>
+        </div>
+        <div class="skill">
+          <img src="../images/icons/react-logo.png" alt="react">
+          <span>react</span>
+        </div>
+        <div class="skill">
+          <img src="../images/icons/figma-logo.png" alt="figma">
+          <span>figma</span>
+        </div>
+      </div>
+    </article>
+
+    @@include("./UI/_button.html", { text: "next" })
+  </div>
+</section>
