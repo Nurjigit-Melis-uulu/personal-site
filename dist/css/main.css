@@ -95,6 +95,10 @@
   z-index: -1;
 }
 
+#home #canvas_images {
+  display: none;
+}
+
 #home header {
   text-align: center;
 }
