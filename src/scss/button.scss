@@ -1,0 +1,23 @@
+.button {
+  padding: 6px 20px;
+  font-family: "Cera Pro", Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+  border: solid 2px white;
+  background-color: #1F1F1F;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  outline: none;
+}
+
+.button:hover {
+  border-color: #BD00FF;
+}
+
+button.neon {
+  border: solid 2px #BD00FF;
+}
+
+button.neon:hover {
+  border-color: white;
+}
