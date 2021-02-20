@@ -177,17 +177,28 @@ button.neon:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.navScreen .nav_wrapper .backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
 .navScreen .nav_wrapper .nav__links {
   list-style: none;
   text-align: center;
-  -webkit-animation: appearance_anima 1s .1s ease-out forwards;
-          animation: appearance_anima 1s .1s ease-out forwards;
+  position: relative;
+  z-index: 3;
+  visibility: hidden;
+  -webkit-animation: show_anima 1s .1s ease-out forwards;
+          animation: show_anima 1s .1s ease-out forwards;
 }
 
 .navScreen .nav_wrapper .nav__links a {
@@ -215,8 +226,9 @@ button.neon:hover {
   z-index: 1;
   overflow: hidden;
   transform: scale(0);
-  -webkit-animation: appearance_anima 1s .1s ease-out forwards;
-          animation: appearance_anima 1s .1s ease-out forwards;
+  visibility: hidden;
+  -webkit-animation: show_anima 1s .1s ease-out forwards;
+          animation: show_anima 1s .1s ease-out forwards;
 }
 
 .navScreen .anim_screen .anim_wrapper .figure,
@@ -239,7 +251,29 @@ button.neon:hover {
   transform: scale(0.6);
 }
 
-@-webkit-keyframes appearance_anima {
+@-webkit-keyframes show_anima {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+@keyframes show_anima {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes hide_anima {
   from {
     transform: scale(0);
   }
@@ -249,7 +283,7 @@ button.neon:hover {
   }
 }
 
-@keyframes appearance_anima {
+@keyframes hide_anima {
   from {
     transform: scale(0);
   }
