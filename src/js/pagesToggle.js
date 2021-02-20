@@ -7,6 +7,13 @@ links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
 
+    links.forEach((link2) => link2.classList.remove("active"));
+
+    document
+      .querySelectorAll('a[href$="#' + link.href.split("#")[1] + '"]')
+      .forEach((link3) => {
+        link3.classList.add("active");
+      });
     togglePage(link.href.split("#")[1]);
   });
 });
@@ -39,4 +46,6 @@ function checkAddress(address) {
   }
 }
 
-window.onload = () => checkAddress(window.location.href);
+window.onload = () => {
+  checkAddress(window.location.href);
+};
