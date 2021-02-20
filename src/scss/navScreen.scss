@@ -1,0 +1,85 @@
+.navScreen {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .nav_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav__links {
+      list-style: none;
+      text-align: center;
+      animation: appearance_anima 1s .1s ease-out forwards;
+  
+      a {  
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+  
+      a:hover {
+        text-decoration: underline;
+      }
+  
+      .active {
+        color: #BD00FF;
+      }
+    }
+  }
+
+  .anim_screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    transform: scale(0);
+    animation: appearance_anima 1s .1s ease-out forwards;
+
+    .anim_wrapper {
+      .figure, .parallax {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .parallax {
+        img {
+          transform: scale(.6);
+        }
+      }
+
+      .figure{
+        img {
+          transform: scale(.6);
+        }
+      }
+    }
+
+    @keyframes appearance_anima {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
+    }
+  }
+}

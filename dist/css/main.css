@@ -161,6 +161,104 @@ button.neon:hover {
   border-color: white;
 }
 
+.navScreen {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navScreen .nav_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navScreen .nav_wrapper .nav__links {
+  list-style: none;
+  text-align: center;
+  -webkit-animation: appearance_anima 1s .1s ease-out forwards;
+          animation: appearance_anima 1s .1s ease-out forwards;
+}
+
+.navScreen .nav_wrapper .nav__links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.navScreen .nav_wrapper .nav__links a:hover {
+  text-decoration: underline;
+}
+
+.navScreen .nav_wrapper .nav__links .active {
+  color: #BD00FF;
+}
+
+.navScreen .anim_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  transform: scale(0);
+  -webkit-animation: appearance_anima 1s .1s ease-out forwards;
+          animation: appearance_anima 1s .1s ease-out forwards;
+}
+
+.navScreen .anim_screen .anim_wrapper .figure,
+.navScreen .anim_screen .anim_wrapper .parallax {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navScreen .anim_screen .anim_wrapper .parallax img {
+  transform: scale(0.6);
+}
+
+.navScreen .anim_screen .anim_wrapper .figure img {
+  transform: scale(0.6);
+}
+
+@-webkit-keyframes appearance_anima {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes appearance_anima {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
