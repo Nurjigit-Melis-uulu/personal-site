@@ -23,6 +23,23 @@
       color: #BD00FF;
     }
   }
+
+  .burger_menu {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+
+    div {
+      width: 100%;
+      height: 2px;
+      margin: 0 0 4px;
+      background-color: white;
+    }
+  }
+
+  .burger_menu:hover div {
+    background-color: #BD00FF; 
+  }
 }
 
 #home_navbar {
@@ -34,6 +51,20 @@
 
     li {
       margin: 0 15px;
+    }
+  }
+
+  .burger_menu {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .navbar__links {
+      display: none;
+    }
+
+    .burger_menu {
+      display: flex;
     }
   }
 }
