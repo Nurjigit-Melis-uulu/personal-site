@@ -1,0 +1,38 @@
+.title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 60px 0;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .title_decorative_el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    div {
+      position: absolute;
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 2px;
+      background-color: #BD00FF;
+    }
+  }
+
+  .title_decorative_el div:first-child {
+    transform: rotateZ(18deg);
+  }
+
+  .title_decorative_el div:last-child {
+    transform: rotateZ(-18deg);
+  }
+}

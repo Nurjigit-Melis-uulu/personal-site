@@ -1,0 +1,21 @@
+.about_text {
+  display: flex;
+
+  div {
+    margin-right: 20px;
+    width: 2px;
+    height: inherit;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  p {
+    width: 100%;
+  }
+}
+
+#about {
+  article {
+    width: 500px;
+  }
+}
