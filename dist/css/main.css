@@ -348,6 +348,23 @@ button.neon:hover {
   transform: rotateZ(-18deg);
 }
 
+#skills .skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 720px;
+  justify-content: center;
+}
+
+#skills .skills_list .skill {
+  width: 100px;
+  text-align: center;
+  margin: 0 10px 20px;
+}
+
+#skills .skills_list .skill span {
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;

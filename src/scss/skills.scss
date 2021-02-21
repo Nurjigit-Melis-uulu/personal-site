@@ -1,0 +1,18 @@
+#skills {
+  .skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 720px;
+    justify-content: center;
+
+    .skill {
+      width: 100px;
+      text-align: center;
+      margin: 0 10px 20px;
+
+      span {
+        margin-top: 10px;
+      }
+    }
+  }
+}
