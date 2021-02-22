@@ -23,7 +23,33 @@
 
   @@include("./templates/UI/_navScreen.html")
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 4
+          }
+        }
+      });
+    });
+
+    $(".owl-carousel").on('changed.owl.carousel', function (event) {
+      console.log(event);
+    })
+  </script>
 </body>
 
 </html>

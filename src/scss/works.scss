@@ -1,0 +1,11 @@
+#works {
+  .works_list {
+    max-width: 720px;
+    height: 130px;
+    overflow: hidden;
+
+    .owl-carousel {
+      z-index: 0;
+    }
+  }
+}

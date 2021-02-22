@@ -27,6 +27,7 @@ let path = {
     js: projectFolder + "/js/",
     img: projectFolder + "/images/",
     fonts: projectFolder + "/fonts/",
+    slick: projectFolder + "/slick/",
   },
   src: {
     html: [sourceFolder + "/*.html", "!" + sourceFolder + "/_*.html"],
