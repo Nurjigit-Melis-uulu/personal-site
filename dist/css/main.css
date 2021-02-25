@@ -438,6 +438,7 @@
 
 #home header {
   text-align: center;
+  text-transform: uppercase;
 }
 
 #home header h1 {
@@ -634,6 +635,7 @@ button.neon:hover {
   width: 100%;
   text-align: center;
   margin: 60px 0;
+  text-transform: uppercase;
 }
 
 .title h2 {
@@ -695,6 +697,29 @@ button.neon:hover {
   z-index: 0;
 }
 
+.contacts_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts_list .contact a {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+.contacts_list .contact a img {
+  width: 40px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -703,7 +728,7 @@ button.neon:hover {
 body {
   background-color: #1A1A1A;
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Cera Pro", Arial, Helvetica, sans-serif;
 }
 

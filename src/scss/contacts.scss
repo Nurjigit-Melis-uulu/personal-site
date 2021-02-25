@@ -1,0 +1,23 @@
+.contacts_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .contact a {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+
+    img {
+      width: 40px;
+    }
+
+  }
+}

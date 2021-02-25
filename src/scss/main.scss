@@ -21,6 +21,7 @@
 @import "title";
 @import "skills";
 @import "works";
+@import "contacts";
 
 * {
   margin: 0;
@@ -30,7 +31,7 @@
 body {
   background-color: #1A1A1A;
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Cera Pro", Arial, Helvetica, sans-serif;
 }
 
