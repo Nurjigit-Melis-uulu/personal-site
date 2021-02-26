@@ -370,18 +370,65 @@ button.neon:hover {
 #works .works_list {
   width: 100%;
   max-width: 720px;
-  height: 130px;
-}
-
-#works .swiper-container .swiper-pagination {
-  height: 20px;
-}
-
-#works .swiper-container .swiper-slide {
-  /* Center slide text vertically */
   display: flex;
+}
+
+#works .works_list .work {
+  position: relative;
+  margin: 10px;
+}
+
+#works .works_list .work img {
+  width: 100%;
+  height: 100%;
+}
+
+#works .works_list .work a {
+  display: none;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px solid #BD00FF;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#works .works_list .work a img {
+  width: 64px;
+}
+
+#works .works_list .work:hover a {
+  display: flex;
+  -webkit-animation: shift .3s .1s forwards ease-out;
+          animation: shift .3s .1s forwards ease-out;
+}
+
+@-webkit-keyframes shift {
+  from {
+
+  }
+
+  to {
+    transform: translate(-10px, -10px);
+  }
+}
+
+@keyframes shift {
+  from {
+
+  }
+
+  to {
+    transform: translate(-10px, -10px);
+  }
 }
 
 .contacts_list {
