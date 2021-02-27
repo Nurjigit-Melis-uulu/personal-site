@@ -18,7 +18,7 @@ testWebP(function (support) {
 let container = document.querySelector(".container");
 let sections = document.querySelectorAll(".section");
 let href = window.location.href;
-let links = document.querySelectorAll("a");
+let links = document.querySelectorAll(".link");
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -38,11 +38,6 @@ links.forEach((link) => {
 function togglePage(page) {
   sections.forEach((section) => {
     console.log(page);
-    // if (page === "#" || page === "") {
-    //   sections.forEach((sect) => (sect.style.display = "none"));
-    //   sections[0].style.display = "block";
-    // }
-
     if (section.id === page) {
       section.style.display = "block";
     } else {

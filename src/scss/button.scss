@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   padding: 6px 20px;
   font-family: "Cera Pro", Arial, Helvetica, sans-serif;
   border-radius: 2px;
@@ -8,16 +9,17 @@
   text-transform: uppercase;
   font-size: 10px;
   outline: none;
+  text-decoration: none;
 }
 
 .button:hover {
   border-color: #BD00FF;
 }
 
-button.neon {
+a.neon {
   border: solid 2px #BD00FF;
 }
 
-button.neon:hover {
+a.neon:hover {
   border-color: white;
 }
