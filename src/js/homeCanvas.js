@@ -52,9 +52,17 @@ class canvasParallax {
     if (this.ctx) {
       this.draw();
     }
+  }
 
-    console.log(this.elements);
-    console.log(this.cnvWidth, this.cnvHeight, this.cnv);
+  resize() {
+    let cnvParent = document.querySelector("#home");
+    let cnvParentParams = cnvParent.getBoundingClientRect();
+    this.cnvWidth = this.cnv.width = Math.floor(cnvParentParams.width);
+    this.cnvHeight = this.cnv.height = Math.floor(cnvParentParams.height);
+    this.sectionPadding = Math.floor(cnvParentParams.x);
+    this.setElements();
+
+    this.draw();
   }
 
   setCanvas() {
@@ -158,6 +166,7 @@ class canvasParallax {
   }
 
   cleanCanvas() {
+    console.log(this.cnvWidth, this.cnvHeight);
     this.ctx.clearRect(0, 0, this.cnvWidth, this.cnvHeight);
   }
 
@@ -177,7 +186,6 @@ class canvasParallax {
     line.x = line.startingPos.x;
     line.y = line.startingPos.y;
 
-    console.log("mouse leaved");
     this.update();
   }
 
@@ -225,6 +233,10 @@ let homeCanvas = new canvasParallax();
 
 window.addEventListener("load", () => {
   homeCanvas.init();
+});
+
+window.addEventListener("resize", () => {
+  homeCanvas.resize();
 });
 
 document.querySelector("#home").addEventListener("mousemove", (e) => {
