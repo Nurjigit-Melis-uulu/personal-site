@@ -37,3 +37,9 @@
     transform: rotateZ(-18deg);
   }
 }
+
+@media (max-width: 600px) {
+  .title {
+    margin: 10px 0 60px;
+  }
+}

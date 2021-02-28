@@ -29,3 +29,35 @@
     }
   }
 }
+
+@media (max-width: 720px) {
+  #home header {
+    h1 {
+      font-size: 64px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  #home header {
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+  }
+}

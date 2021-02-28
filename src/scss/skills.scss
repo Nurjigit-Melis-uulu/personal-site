@@ -16,3 +16,15 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  #skills .skills_list .skill {
+    width: 80px;
+  }
+}
+
+@media (max-width: 720px) {
+  #skills .skills_list .skill {
+    width: 60px;
+  }
+}

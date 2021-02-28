@@ -19,3 +19,23 @@
     max-width: 720px;
   }
 }
+
+@media (max-width: 440px) {
+  #about .content {
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+
+  #about {
+    height: auto;
+  }
+
+  #about .content .button {
+    position: static;
+    margin: 20px;
+  }
+
+  #about .navbar {
+    margin-top: 40px;
+  }
+}

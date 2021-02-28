@@ -18,6 +18,24 @@
     img {
       width: 40px;
     }
+  }
+}
 
+@media (max-width: 720px) {
+  .contacts_list .contact a {
+    width: 160px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts_list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .contacts_list {
+    margin: 60px 0;
   }
 }

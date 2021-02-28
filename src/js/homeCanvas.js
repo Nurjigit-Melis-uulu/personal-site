@@ -166,7 +166,6 @@ class canvasParallax {
   }
 
   cleanCanvas() {
-    console.log(this.cnvWidth, this.cnvHeight);
     this.ctx.clearRect(0, 0, this.cnvWidth, this.cnvHeight);
   }
 

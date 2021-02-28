@@ -46,7 +46,6 @@ a.active {
 }
 
 .container {
-  min-height: 600px;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -75,5 +74,13 @@ a.active {
       position: absolute;
       bottom: 20px;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
   }
 }

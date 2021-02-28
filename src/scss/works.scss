@@ -51,3 +51,22 @@
     }
   }
 }
+
+@media (max-width: 720px) {
+  #works .works_list {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .work {
+      width: 180px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  #works .works_list {
+    .work {
+      width: 100px;
+    }
+  }
+}
